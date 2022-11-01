@@ -1,6 +1,6 @@
 export DOCKER_REPO_PREFIX=jess
 
-talisman(){
+talisman_func(){
  
  docker run --rm -v "$(pwd):/apps" -w /apps -it talisman sh -c "cd $1 && talisman $2"
 }
